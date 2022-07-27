@@ -13,3 +13,12 @@ body {
   width: auto;
   background-size: cover;
 }
+.casual-shoes img {
+  height: 20rem;
+  width: auto;
+}
+
+.card-image {
+  height: 6rem;
+  width: 6rem;
+}
