@@ -20,5 +20,5 @@ body {
 
 .card-image {
   height: 6rem;
-  width: 6rem;
+  width: auto;
 }
