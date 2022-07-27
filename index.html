@@ -3,16 +3,245 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Step Next</title>
+    <!-- !Bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <!-- !StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- !Header Start -->
+    <header>
+      <!-- !Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#"
+            ><span class="text-danger">Step</span>
+            <span class="">Next</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Boots</a></li>
+                  <li><a class="dropdown-item" href="#">Shoes</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sports Shoe</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- !Carousel Starts -->
+    <!-- <div
+      class="d-flex align-items-md-center justify-content-md-center flex-column-reverse flex-md-row flex-lg-row bg-dark py-5"
+    >
+      <div class="w-100 banner-picture d-flex justify-content-center">
+        <img
+          class="w-50 h-50 img-fluid"
+          src="./images/banner-picture.png"
+          alt="Banner Photo"
+        />
+      </div>
+      <div class="w-100 justify-content-center ps-5">
+        <h1>
+          <span class="text-danger fs-1">Nike Recat</span>
+          <br />
+          <span class="text-warning fs-1">Infinity Run 3</span>
+        </h1>
+        <p class="fs-6 text-white">
+          Good Shoes Takes You Good Places Good Shoes <br />
+          Takes You Good Places
+        </p>
+        <button class="btn btn-danger rounded-pill fs-5 px-5">Buy Now</button>
+      </div>
+    </div> -->
+    <section class="carousel">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- !Carosuel Item 1 -->
+            <div
+              class="d-flex align-items-md-center justify-content-md-center flex-column-reverse flex-md-row flex-lg-row bg-dark py-5"
+            >
+              <div
+                class="w-100 banner-picture d-flex justify-content-center p-5"
+              >
+                <img
+                  class="img-fluid"
+                  src="./images/banner-picture.png"
+                  alt="Banner Photo"
+                />
+              </div>
+              <div class="w-100 justify-content-center ps-5">
+                <h1>
+                  <span class="text-danger fs-1">Nike Recat</span>
+                  <br />
+                  <span class="text-warning fs-1"
+                    >Infinity Run All Over The World</span
+                  >
+                </h1>
+                <p class="fs-6 text-white">
+                  Good Shoes Takes You Good Places Good Shoes <br />
+                  Takes You Good Places
+                </p>
+                <button class="btn btn-danger rounded-pill fs-5 px-5">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- !Carosuel Item 2 -->
+          <div class="carousel-item">
+            <div
+              class="d-flex align-items-md-center justify-content-md-center flex-column-reverse flex-md-row flex-lg-row bg-dark py-5"
+            >
+              <div
+                class="w-100 banner-picture d-flex justify-content-center p-5"
+              >
+                <img
+                  class="img-fluid"
+                  src="./images/shoe-1.png"
+                  alt="Banner Photo"
+                />
+              </div>
+              <div class="w-100 justify-content-center ps-5">
+                <h1>
+                  <span class="text-danger fs-1">Nike Recat</span>
+                  <br />
+                  <span class="text-warning fs-1">Infinity Run 1</span>
+                </h1>
+                <p class="fs-6 text-white">
+                  Good Shoes Takes You Good Places Good Shoes <br />
+                  Takes You Good Places
+                </p>
+                <button class="btn btn-danger rounded-pill fs-5 px-5">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- !Carosuel Item 3 -->
+          <div class="carousel-item">
+            <div
+              class="d-flex align-items-md-center justify-content-md-center flex-column-reverse flex-md-row flex-lg-row bg-dark py-5"
+            >
+              <div
+                class="w-100 banner-picture d-flex justify-content-center p-5"
+              >
+                <img
+                  class="img-fluid"
+                  src="./images/shoe-2.png"
+                  alt="Banner Photo"
+                />
+              </div>
+              <div class="vw-100 justify-content-center ps-5">
+                <h1>
+                  <span class="text-danger fs-1">Nike Recat</span>
+                  <br />
+                  <span class="text-warning fs-1">Infinity Run 2</span>
+                </h1>
+                <p class="fs-6 text-white">
+                  Good Shoes Takes You Good Places Good Shoes <br />
+                  Takes You Good Places
+                </p>
+                <button class="btn btn-danger rounded-pill fs-5 px-5">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- !Carousel Ends -->
+
+    <!-- !Header Ends -->
+
+    <!-- !Bootstrap CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

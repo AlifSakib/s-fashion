@@ -7,3 +7,9 @@ body {
   font-family: "Poppins", sans-serif; */
   font-family: "Quicksand", sans-serif;
 }
+
+.carousel img {
+  height: 20rem;
+  width: auto;
+  background-size: cover;
+}
